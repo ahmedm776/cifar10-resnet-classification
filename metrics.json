@@ -1,0 +1,12 @@
+{
+ "model": "model_best.keras = Stage E epoch 4 (sha256 ce473ae523238012eff6ceaf053f1fdfd76a74ba634bf5d95cded3bfd64687fe)",
+ "selection": "best val_loss among completed sibling epochs E1-E4, locked before any test access; single test evaluation, no feedback loops",
+ "validation": {"E1": [0.389946, 0.8756], "E2": [0.378858, 0.8766], "E3": [0.360109, 0.8842], "E4": [0.322156, 0.8986]},
+ "official_test_benchmark_reuse_development_exposed": {
+  "acc": 0.8951, "loss": 0.31394, "macro_f1": 0.8947,
+  "original_20ep_acc": 0.8755, "warm_ep1_acc": 0.8848,
+  "paired_vs_original": {"both": 8538, "orig_only": 217, "e4_only": 413, "neither": 832, "delta_pp": 1.96, "mcnemar_se_pp": 0.25},
+  "paired_vs_warm_ep1": {"both": 8641, "warm_only": 207, "e4_only": 310, "neither": 842, "delta_pp": 1.03, "mcnemar_se_pp": 0.23}
+  },
+ "caveat": "Test set is development-exposed (reused benchmark); treat as a development check, not fresh generalization evidence."
+}
